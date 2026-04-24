@@ -25,6 +25,9 @@ std::vector<Token> Lexer::tokenize(std::string input) {
         } else if (current == '~') {
             tokens.push_back({TokenType::NOT, "~"});
             i++;
+        } else if (current == '!') {
+            tokens.push_back({TokenType::NOT, "!"});
+            i++;
         } else if (current == '^') {
             tokens.push_back({TokenType::XOR, "^"});
             i++;

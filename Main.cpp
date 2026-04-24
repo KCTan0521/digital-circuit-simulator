@@ -7,7 +7,7 @@
 using namespace std;
 
 int main (){
-    string input = "apple = banana & ~grape";
+    string input = "apple = banana & !grape";
     // cout << "Enter logic expression (e.g. A = B & C)";
     // getline(cin, input);
 
