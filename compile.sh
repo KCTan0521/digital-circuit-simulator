@@ -1,4 +1,4 @@
 #!/bin/bash
 clear
-g++ main.cpp -o main.obj
-./main.obj
+g++ Main.cpp -o Main.obj
+./Main.obj
