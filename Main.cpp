@@ -6,7 +6,7 @@
 
 using namespace std;
 
-int main (){
+int main2 (){
     string input = "apple = banana & !grape";
     // cout << "Enter logic expression (e.g. A = B & C)";
     // getline(cin, input);
