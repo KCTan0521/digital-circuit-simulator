@@ -16,6 +16,7 @@ enum class TokenType{
     ASSIGN,   // =
     LPAREN,   // (
     RPAREN,   // )
+    LITERAL,  // 1 or 0, but this not fully supported
     UNKNOWN   // For erros or characters we don't recognize
 };
 
