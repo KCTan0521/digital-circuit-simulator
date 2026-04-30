@@ -31,7 +31,7 @@ bool evaluate(shared_ptr<Node> node, map<char, bool>& values) {
     // Operator Node: Evaluate children first
     char op = node->value[0];
 
-    if (op == '~') { // Unary NOT
+    if (op == '~' || op == '!') { // Unary NOT
         return !evaluate(node->right, values);
     }
 
@@ -48,8 +48,8 @@ bool evaluate(shared_ptr<Node> node, map<char, bool>& values) {
 
 }
 
-int main(){
-    string expr = "~(~A | ~B)";
+int mainLogicEngine(){
+    string expr = "!(~A | ~B)";
     auto root  = Parser::buildAST(expr);
 
     // Define values for our variables
@@ -76,7 +76,7 @@ int main(){
     return 0;
 }
 
-int mainLogicEngine(){
+int mainLogicEngine2(){
     string expr = "~(A | B) & C";
     // string expr = "A & (B | C)";
     auto root = Parser::buildAST(expr);
